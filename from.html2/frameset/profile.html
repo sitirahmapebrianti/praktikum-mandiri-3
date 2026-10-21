@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I4F - Directory Profile Page</title>
+  <style>
+    /* Styling Dasar Mengikuti Gaya Wireframe / Mockup */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Comic Sans MS', 'Chalkboard SE', 'Courier New', sans-serif;
+      color: #111;
+      background-color: #fcfcfc;
+      padding: 20px;
+    }
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+      border: 2px solid #222;
+      padding: 25px;
+      background-color: #fff;
+    }
+
+    /* --- BAGIAN ATAS (Header Profile & Kategori) --- */
+    .top-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 25px;
+    }
+    .profile-info {
+      display: flex;
+      gap: 20px;
+    }
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border: 2px solid #222;
+      object-fit: cover;
+    }
+    .bio-details h2 {
+      margin: 0 0 10px 0;
+      font-size: 24px;
+    }
+    .bio-details p {
+      margin: 4px 0;
+      font-size: 14px;
+    }
+    .bio-details a {
+      color: #0000ff;
+    }
+    .categories {
+      text-align: right;
+    }
+    .categories h4 {
+      margin: 0 0 5px 0;
+      text-decoration: underline;
+    }
+    .categories ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 13px;
+    }
+    .categories li {
+      margin-bottom: 3px;
+    }
+
+    /* --- BAGIAN TENGAH (Deskripsi Diri 2 Paragraf) --- */
+    .description {
+      border-top: 1px solid #ccc;
+      padding-top: 15px;
+      margin-bottom: 25px;
+      line-height: 1.6;
+      font-size: 14px;
+      text-align: justify;
+    }
+    .description p {
+      margin-bottom: 12px;
+    }
+
+    /* --- BAGIAN BAWAH (Multimedia & Attachments) --- */
+    .bottom-section {
+      display: flex;
+      gap: 15px;
+    }
+
+    /* Kotak Video */
+    .video-box {
+      flex: 1.2;
+      border: 1px solid #333;
+      padding: 10px;
+      background-color: #fafafa;
+    }
+    .video-box video {
+      width: 100%;
+      height: auto;
+      border: 1px solid #888;
+    }
+
+    /* Koleksi Foto Grid */
+    .photo-box {
+      flex: 1;
+      border: 1px solid #333;
+      padding: 10px;
+      background-color: #fafafa;
+    }
+    .photo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .photo-grid img {
+      width: 100%;
+      height: 65px;
+      object-fit: cover;
+      border: 1px solid #444;
+    }
+
+    /* Kotak Attachments / Download */
+    .attachments-box {
+      flex: 1.2;
+      border: 1px solid #333;
+      padding: 10px;
+      background-color: #fafafa;
+    }
+    .attachments-box fieldset {
+      border: 1px solid #333;
+      padding: 8px 12px;
+      margin: 0;
+    }
+    .attachments-box legend {
+      font-weight: bold;
+      padding: 0 5px;
+      font-size: 13px;
+    }
+    .attachments-list {
+      list-style: none;
+      padding: 0;
+      margin: 5px 0 0 0;
+      font-size: 13px;
+    }
+    .attachments-list li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .attachments-list a {
+      color: #0000ff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- 1. BAGIAN ATAS: Foto Profil, Biodata & Kategori -->
+    <div class="top-section">
+      <div class="profile-info">
+        <!-- Foto Profil Utama -->
+        <img src="img/poto0.jpeg" alt="Foto Profil" class="profile-img">
+
+        <!-- Biodata Lengkap -->
+        <div class="bio-details">
+          <h2>Siti Rahma Pebrianti</h2>
+          <p>Bogor</p>
+          <p>STT Terpadu Nurul Fikri</p>
+          <p>Depok, Jawa Barat 16424</p>
+          <p>Email: <a href="sirirahmapeb@gmail.com">sitirahmapeb@gmail.com</a></p>
+          <p>Telephone: 0856-9120-9012</p>
+        </div>
+      </div>
+
+      <!-- Kategori -->
+      <div class="categories">
+        <h4>Categories</h4>
+        <ul>
+          <li>Informatika</li>
+          <li>Pengembangan Web</li>
+          <li>Desain UI/UX</li>
+          <li>Pemrograman</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 2. BAGIAN TENGAH: Deskripsi Diri (2 Paragraf Baru) -->
+    <div class="description">
+      <p>
+        Saya adalah orang yang masih terus belajar untuk menjadi pribadi yang lebih baik. Saya senang mencoba hal-hal baru dan ingin mendapatkan banyak pengalaman. Saya juga termasuk orang yang peduli dengan orang-orang di sekitar saya. Bagi saya, setiap orang punya prosesnya masing-masing, jadi saya ingin terus berkembang tanpa harus membandingkan diri dengan orang lain.
+      </p>
+      <p>
+        Saya memiliki keinginan untuk menjadi pribadi yang lebih mandiri, percaya diri, dan bertanggung jawab. Terkadang saya masih merasa ragu dengan diri sendiri, tetapi saya ingin terus belajar untuk mengatasi hal tersebut. Saya juga ingin menjadi orang yang bisa membanggakan orang tua, bermanfaat bagi orang lain, dan tetap berpegang pada nilai-nilai agama dalam kehidupan sehari-hari.
+      </p>
+    </div>
+
+    <!-- 3. BAGIAN BAWAH: Video, Koleksi Foto & Link Download File -->
+    <div class="bottom-section">
+      
+      <!-- Video Player -->
+      <div class="video-box">
+        <video controls>
+          <source src="img/vidio 1.mp4" type="video/mp4">
+          Browser Anda tidak mendukung pemutaran video.
+        </video>
+      </div>
+
+      <!-- Koleksi Foto Grid -->
+      <div class="photo-box">
+        <div class="photo-grid">
+          <img src="img/poto1.jpeg" alt="Gambar 1">
+          <img src="img/poto2.jpeg" alt="Gambar 2">
+          <img src="img/poto3.jpeg" alt="Gambar 3">
+          <img src="img/poto4.jpeg" alt="Gambar 4">
+        </div>
+      </div>
+
+      <!-- Attachments / Link Download File -->
+      <div class="attachments-box">
+        <fieldset>
+          <legend>Attachments</legend>
+          <ul class="attachments-list">
+            <li>📷 <a href="cv.pdf" download>Dokumen CV Terbaru.pdf</a></li>
+            <li>📄 <a href="cv.pdf" download>Sertifikat Kelulusan.pdf</a></li>
+            <li>📄 <a href="cv.pdf" download>Portofolio Projek.pdf</a></li>
+            <li>📄 <a href="cv.pdf" download>Berkas Pendukung.pdf</a></li>
+          </ul>
+        </fieldset>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>

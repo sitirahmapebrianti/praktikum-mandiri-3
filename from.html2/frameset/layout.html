@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Layout - Praktikum 3</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #ffff00;
+      padding: 15px;
+      text-align: left;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    header img {
+      max-height: 50px;
+    }
+    nav {
+      background-color: #7cfc00;
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    .main-container {
+      display: flex;
+      gap: 5px;
+      margin-top: 5px;
+    }
+    article {
+      flex: 3;
+      background-color: #f4a460;
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+    section {
+      background-color: #ffe4b5;
+      padding: 15px;
+      margin-bottom: 10px;
+      border: 1px solid #bbb;
+    }
+    aside {
+      flex: 1;
+      background-color: #00ffff;
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+    aside img {
+      width: 100%;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    footer {
+      background-color: #ffeb3b;
+      padding: 15px;
+      text-align: left;
+      font-weight: bold;
+      border: 1px solid #e0e0e0;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="./logo/WhatsApp Image 2026-10-15 at 09.34.37.jpeg" alt="Logo">
+    <h2>Web Portal Praktikum</h2>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Artikel</a>
+    <a href="#">Galeri</a>
+    <a href="#">Kontak</a>
+  </nav>
+
+  <div class="main-container">
+    <article>
+      <h3>Artikel Utama</h3>
+      <section>
+        <h4>Section 1: Pengenalan Web Layout</h4>
+        <p>Layout web berbasis HTML5 menggunakan elemen semantik seperti header, nav, article, section, aside, dan footer.</p>
+      </section>
+      <section>
+        <h4>Section 2: Manfaat Elemen Semantik</h4>
+        <p>Memudahkan struktur kode serta meningkatkan visibilitas mesin pencari (SEO).</p>
+      </section>
+      <section>
+        <h4>Section 3: Kesimpulan</h4>
+        <p>Penggunaan struktur yang rapi mempermudah pengembangan dan pemeliharaan website.</p>
+      </section>
+    </article>
+
+    <aside>
+      <h3>Multimedia / Galeri</h3>
+      <img src="./logo/WhatsApp Image 2026-10-15 at 09.34.37.jpeg" alt="Foto Dokumentasi">
+    </aside>
+  </div>
+
+  <footer>
+    Footer - Copyright © 2026
+  </footer>
+
+</body>
+</html>
